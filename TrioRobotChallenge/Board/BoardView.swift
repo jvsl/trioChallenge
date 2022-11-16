@@ -1,5 +1,12 @@
 import UIKit
 
+private extension BoardView.Layout {
+    static let boardScoreHeight: CGFloat = 50
+    static let boardScoreSpacing: CGFloat = 50
+    static let boardPaddingTop: CGFloat = 120
+    static let boardFontSize: CGFloat = 50
+}
+
 final class BoardView: UIView {
     private let boardToScreenRatio = 0.9
     private var originX: CGFloat = 13
@@ -7,19 +14,13 @@ final class BoardView: UIView {
     private var squareSide: CGFloat = 50
     private let circleRatio: CGFloat = 0.5
     private let circleRadius: CGFloat = 0.4
-    
     private lazy var leftScore = makeLabel(color: Constants.leftRobotColor)
     private lazy var rightScore = makeLabel(color: Constants.rightRobotColor)
     private lazy var drawScore = makeLabel(color: Constants.prizeColor)
     private var scoreContainer = UIStackView()
     private var viewModel: BoardViewModeling
-    
-    var updateView : Bool = false {
-        didSet {
-            setNeedsDisplay()
-        }
-    }
-    
+    fileprivate enum Layout {}
+
     init(viewModel: BoardViewModeling) {
         self.viewModel = viewModel
 
@@ -115,7 +116,7 @@ final class BoardView: UIView {
         scoreLabel.text = "0"
         scoreLabel.textAlignment = .center
         scoreLabel.textColor = color
-        scoreLabel.font = .systemFont(ofSize: 50, weight: .bold)
+        scoreLabel.font = .systemFont(ofSize: Layout.boardFontSize, weight: .bold)
         
         return scoreLabel
     }
@@ -123,7 +124,7 @@ final class BoardView: UIView {
     private func makeScoreBoard() {
         scoreContainer.translatesAutoresizingMaskIntoConstraints = false
         scoreContainer.alignment = .center
-        scoreContainer.spacing = 40
+        scoreContainer.spacing = Layout.boardScoreSpacing
         
         addSubview(scoreContainer)
         scoreContainer.addArrangedSubview(leftScore)
@@ -131,8 +132,8 @@ final class BoardView: UIView {
         scoreContainer.addArrangedSubview(drawScore)
         
         NSLayoutConstraint.activate([
-            self.scoreContainer.topAnchor.constraint(equalTo: topAnchor, constant: 120),
-            self.scoreContainer.heightAnchor.constraint(equalToConstant: 50),
+            self.scoreContainer.topAnchor.constraint(equalTo: topAnchor, constant: Layout.boardPaddingTop),
+            self.scoreContainer.heightAnchor.constraint(equalToConstant: Layout.boardScoreHeight),
             self.scoreContainer.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     }

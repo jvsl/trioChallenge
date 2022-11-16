@@ -1,36 +1,56 @@
-//
-//  TrioRobotChallengeTests.swift
-//  TrioRobotChallengeTests
-//
-//  Created by joão lucas on 12/11/22.
-//
-
 import XCTest
 @testable import TrioRobotChallenge
 
 final class TrioRobotChallengeTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testStartEngine_shouldUpdateViewAndColorsCorrectly() throws {
+        let boardSpy = BoardViewModelSpy()
+        let robot = Robot()
+        let robotViewModel = RobotViewModel(
+            boardViewModel: boardSpy, robotEngine: robot)
+        robotViewModel.start()
+        
+        XCTAssertEqual(boardSpy.didCallUpdateView, 1)
+        XCTAssertEqual(boardSpy.colors[robot.prizePosition.row, robot.prizePosition.column], .yellow)
+        XCTAssertEqual(boardSpy.colors[robot.rightRobotCurrentPosition.row,
+                                   robot.rightRobotCurrentPosition.column], .cyan)
+        XCTAssertEqual(boardSpy.colors[robot.leftRobotCurrentPosition.row,
+                                   robot.leftRobotCurrentPosition.column], .purple)
+        
     }
+}
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+final class BoardViewModelSpy: BoardViewModeling {
+    var didCallUpdateBoard = 0
+    var didCallUpdateLeftScore = 0
+    var didCallUpdateRightScore = 0
+    var didCallDraw = 0
+    var didCallUpdateView = 0
+    var didCallColers = 0
+    
+    lazy var updateBoard: ((TrioRobotChallenge.RobotTrackPosition, UIColor, UIColor) -> Void)? = { _, _, _ in
+        self.didCallUpdateBoard += 1
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    lazy var updateLeftScore: ((Int) -> Void)? = { _ in
+        self.didCallUpdateLeftScore += 1
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    lazy var updateRightBoard: ((Int) -> Void)? = { _ in
+        self.didCallUpdateRightScore += 1
     }
-
+    
+    lazy var draw: ((Int) -> Void)? = { _ in
+        self.didCallDraw += 1
+    }
+    
+    lazy var updateView: (() -> Void)? = {
+        self.didCallUpdateView += 1
+    }
+    
+    var colors: TrioRobotChallenge.Matrix<UIColor> = Matrix<UIColor>(rows: 7, columns: 7, defaultValue: .white)
+    
+    func resetColorBoard() {
+        didCallColers += 1
+    }
 }
