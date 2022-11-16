@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C54F7FF62920534500766158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F7FF52920534500766158 /* AppDelegate.swift */; };
+		C54F7FF82920534500766158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F7FF72920534500766158 /* SceneDelegate.swift */; };
+		C54F7FFA2920534500766158 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F7FF92920534500766158 /* BoardViewController.swift */; };
+		C54F7FFD2920534500766158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54F7FFB2920534500766158 /* Main.storyboard */; };
+		C54F7FFF2920534A00766158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54F7FFE2920534A00766158 /* Assets.xcassets */; };
+		C54F80022920534A00766158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54F80002920534A00766158 /* LaunchScreen.storyboard */; };
+		C54F800D2920534A00766158 /* TrioRobotChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F800C2920534A00766158 /* TrioRobotChallengeTests.swift */; };
+		C54F80172920534A00766158 /* TrioRobotChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F80162920534A00766158 /* TrioRobotChallengeUITests.swift */; };
+		C54F80192920534A00766158 /* TrioRobotChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F80182920534A00766158 /* TrioRobotChallengeUITestsLaunchTests.swift */; };
+		C54F80262920538B00766158 /* 2DMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F80252920538B00766158 /* 2DMatrix.swift */; };
+		C54F802A29205E2A00766158 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F802929205E2A00766158 /* BoardView.swift */; };
+		C54F802D292165ED00766158 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F802C292165ED00766158 /* BoardViewModel.swift */; };
+		C54F802F29217E3C00766158 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F802E29217E3C00766158 /* Robot.swift */; };
+		C54F80312922A46200766158 /* ViewConding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F80302922A46200766158 /* ViewConding.swift */; };
+		C5FF0D832923FD4F002D62DF /* RobotPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF0D822923FD4F002D62DF /* RobotPosition.swift */; };
+		C5FF0D852925319C002D62DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF0D842925319C002D62DF /* Constants.swift */; };
+		C5FF0D8729253310002D62DF /* RobotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF0D8629253310002D62DF /* RobotViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C54F80092920534A00766158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54F7FEA2920534500766158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54F7FF12920534500766158;
+			remoteInfo = TrioRobotChallenge;
+		};
+		C54F80132920534A00766158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54F7FEA2920534500766158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54F7FF12920534500766158;
+			remoteInfo = TrioRobotChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C54F7FF22920534500766158 /* TrioRobotChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrioRobotChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54F7FF52920534500766158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C54F7FF72920534500766158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C54F7FF92920534500766158 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		C54F7FFC2920534500766158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C54F7FFE2920534A00766158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C54F80012920534A00766158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C54F80032920534A00766158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54F80082920534A00766158 /* TrioRobotChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrioRobotChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54F800C2920534A00766158 /* TrioRobotChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrioRobotChallengeTests.swift; sourceTree = "<group>"; };
+		C54F80122920534A00766158 /* TrioRobotChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrioRobotChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54F80162920534A00766158 /* TrioRobotChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrioRobotChallengeUITests.swift; sourceTree = "<group>"; };
+		C54F80182920534A00766158 /* TrioRobotChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrioRobotChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C54F80252920538B00766158 /* 2DMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2DMatrix.swift; sourceTree = "<group>"; };
+		C54F802929205E2A00766158 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		C54F802C292165ED00766158 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		C54F802E29217E3C00766158 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		C54F80302922A46200766158 /* ViewConding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConding.swift; sourceTree = "<group>"; };
+		C5FF0D822923FD4F002D62DF /* RobotPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotPosition.swift; sourceTree = "<group>"; };
+		C5FF0D842925319C002D62DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C5FF0D8629253310002D62DF /* RobotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C54F7FEF2920534500766158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54F80052920534A00766158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54F800F2920534A00766158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C54F7FE92920534500766158 = {
+			isa = PBXGroup;
+			children = (
+				C54F7FF42920534500766158 /* TrioRobotChallenge */,
+				C54F800B2920534A00766158 /* TrioRobotChallengeTests */,
+				C54F80152920534A00766158 /* TrioRobotChallengeUITests */,
+				C54F7FF32920534500766158 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C54F7FF32920534500766158 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C54F7FF22920534500766158 /* TrioRobotChallenge.app */,
+				C54F80082920534A00766158 /* TrioRobotChallengeTests.xctest */,
+				C54F80122920534A00766158 /* TrioRobotChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C54F7FF42920534500766158 /* TrioRobotChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				C5FF0D8A292533D9002D62DF /* Board */,
+				C5FF0D89292533BF002D62DF /* Robot */,
+				C5FF0D88292533A3002D62DF /* Helpers */,
+				C54F7FF52920534500766158 /* AppDelegate.swift */,
+				C54F7FF72920534500766158 /* SceneDelegate.swift */,
+				C54F7FFB2920534500766158 /* Main.storyboard */,
+				C54F7FFE2920534A00766158 /* Assets.xcassets */,
+				C54F80002920534A00766158 /* LaunchScreen.storyboard */,
+				C54F80032920534A00766158 /* Info.plist */,
+			);
+			path = TrioRobotChallenge;
+			sourceTree = "<group>";
+		};
+		C54F800B2920534A00766158 /* TrioRobotChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C54F800C2920534A00766158 /* TrioRobotChallengeTests.swift */,
+			);
+			path = TrioRobotChallengeTests;
+			sourceTree = "<group>";
+		};
+		C54F80152920534A00766158 /* TrioRobotChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C54F80162920534A00766158 /* TrioRobotChallengeUITests.swift */,
+				C54F80182920534A00766158 /* TrioRobotChallengeUITestsLaunchTests.swift */,
+			);
+			path = TrioRobotChallengeUITests;
+			sourceTree = "<group>";
+		};
+		C5FF0D88292533A3002D62DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C5FF0D842925319C002D62DF /* Constants.swift */,
+				C54F80252920538B00766158 /* 2DMatrix.swift */,
+				C54F80302922A46200766158 /* ViewConding.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C5FF0D89292533BF002D62DF /* Robot */ = {
+			isa = PBXGroup;
+			children = (
+				C5FF0D8629253310002D62DF /* RobotViewModel.swift */,
+				C5FF0D822923FD4F002D62DF /* RobotPosition.swift */,
+				C54F802E29217E3C00766158 /* Robot.swift */,
+			);
+			path = Robot;
+			sourceTree = "<group>";
+		};
+		C5FF0D8A292533D9002D62DF /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				C54F802C292165ED00766158 /* BoardViewModel.swift */,
+				C54F802929205E2A00766158 /* BoardView.swift */,
+				C54F7FF92920534500766158 /* BoardViewController.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C54F7FF12920534500766158 /* TrioRobotChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54F801C2920534A00766158 /* Build configuration list for PBXNativeTarget "TrioRobotChallenge" */;
+			buildPhases = (
+				C54F7FEE2920534500766158 /* Sources */,
+				C54F7FEF2920534500766158 /* Frameworks */,
+				C54F7FF02920534500766158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrioRobotChallenge;
+			productName = TrioRobotChallenge;
+			productReference = C54F7FF22920534500766158 /* TrioRobotChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C54F80072920534A00766158 /* TrioRobotChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54F801F2920534A00766158 /* Build configuration list for PBXNativeTarget "TrioRobotChallengeTests" */;
+			buildPhases = (
+				C54F80042920534A00766158 /* Sources */,
+				C54F80052920534A00766158 /* Frameworks */,
+				C54F80062920534A00766158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C54F800A2920534A00766158 /* PBXTargetDependency */,
+			);
+			name = TrioRobotChallengeTests;
+			productName = TrioRobotChallengeTests;
+			productReference = C54F80082920534A00766158 /* TrioRobotChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C54F80112920534A00766158 /* TrioRobotChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54F80222920534A00766158 /* Build configuration list for PBXNativeTarget "TrioRobotChallengeUITests" */;
+			buildPhases = (
+				C54F800E2920534A00766158 /* Sources */,
+				C54F800F2920534A00766158 /* Frameworks */,
+				C54F80102920534A00766158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C54F80142920534A00766158 /* PBXTargetDependency */,
+			);
+			name = TrioRobotChallengeUITests;
+			productName = TrioRobotChallengeUITests;
+			productReference = C54F80122920534A00766158 /* TrioRobotChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C54F7FEA2920534500766158 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					C54F7FF12920534500766158 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					C54F80072920534A00766158 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = C54F7FF12920534500766158;
+					};
+					C54F80112920534A00766158 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = C54F7FF12920534500766158;
+					};
+				};
+			};
+			buildConfigurationList = C54F7FED2920534500766158 /* Build configuration list for PBXProject "TrioRobotChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C54F7FE92920534500766158;
+			productRefGroup = C54F7FF32920534500766158 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C54F7FF12920534500766158 /* TrioRobotChallenge */,
+				C54F80072920534A00766158 /* TrioRobotChallengeTests */,
+				C54F80112920534A00766158 /* TrioRobotChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C54F7FF02920534500766158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54F80022920534A00766158 /* LaunchScreen.storyboard in Resources */,
+				C54F7FFF2920534A00766158 /* Assets.xcassets in Resources */,
+				C54F7FFD2920534500766158 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54F80062920534A00766158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54F80102920534A00766158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C54F7FEE2920534500766158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54F80262920538B00766158 /* 2DMatrix.swift in Sources */,
+				C5FF0D8729253310002D62DF /* RobotViewModel.swift in Sources */,
+				C5FF0D852925319C002D62DF /* Constants.swift in Sources */,
+				C54F7FFA2920534500766158 /* BoardViewController.swift in Sources */,
+				C54F7FF62920534500766158 /* AppDelegate.swift in Sources */,
+				C54F802D292165ED00766158 /* BoardViewModel.swift in Sources */,
+				C54F802F29217E3C00766158 /* Robot.swift in Sources */,
+				C54F80312922A46200766158 /* ViewConding.swift in Sources */,
+				C54F802A29205E2A00766158 /* BoardView.swift in Sources */,
+				C54F7FF82920534500766158 /* SceneDelegate.swift in Sources */,
+				C5FF0D832923FD4F002D62DF /* RobotPosition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54F80042920534A00766158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54F800D2920534A00766158 /* TrioRobotChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54F800E2920534A00766158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54F80172920534A00766158 /* TrioRobotChallengeUITests.swift in Sources */,
+				C54F80192920534A00766158 /* TrioRobotChallengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C54F800A2920534A00766158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54F7FF12920534500766158 /* TrioRobotChallenge */;
+			targetProxy = C54F80092920534A00766158 /* PBXContainerItemProxy */;
+		};
+		C54F80142920534A00766158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54F7FF12920534500766158 /* TrioRobotChallenge */;
+			targetProxy = C54F80132920534A00766158 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C54F7FFB2920534500766158 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54F7FFC2920534500766158 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C54F80002920534A00766158 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54F80012920534A00766158 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C54F801A2920534A00766158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C54F801B2920534A00766158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C54F801D2920534A00766158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrioRobotChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trio.joao.victor.TrioRobotChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C54F801E2920534A00766158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrioRobotChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trio.joao.victor.TrioRobotChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C54F80202920534A00766158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trio.joao.victor.TrioRobotChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrioRobotChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrioRobotChallenge";
+			};
+			name = Debug;
+		};
+		C54F80212920534A00766158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trio.joao.victor.TrioRobotChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrioRobotChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrioRobotChallenge";
+			};
+			name = Release;
+		};
+		C54F80232920534A00766158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trio.joao.victor.TrioRobotChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrioRobotChallenge;
+			};
+			name = Debug;
+		};
+		C54F80242920534A00766158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = trio.joao.victor.TrioRobotChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrioRobotChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C54F7FED2920534500766158 /* Build configuration list for PBXProject "TrioRobotChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54F801A2920534A00766158 /* Debug */,
+				C54F801B2920534A00766158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54F801C2920534A00766158 /* Build configuration list for PBXNativeTarget "TrioRobotChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54F801D2920534A00766158 /* Debug */,
+				C54F801E2920534A00766158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54F801F2920534A00766158 /* Build configuration list for PBXNativeTarget "TrioRobotChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54F80202920534A00766158 /* Debug */,
+				C54F80212920534A00766158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54F80222920534A00766158 /* Build configuration list for PBXNativeTarget "TrioRobotChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54F80232920534A00766158 /* Debug */,
+				C54F80242920534A00766158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C54F7FEA2920534500766158 /* Project object */;
+}
